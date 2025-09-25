@@ -59,3 +59,20 @@ function findProductById(id) {
 }
 
 // console.log(findProductById(203))
+
+//task 4
+//4) lineItemTotal(cartItem)
+//Uses findProductById and priceAfterCategoryDiscount
+//Returns qty × discountedUnitPrice
+//If product missing or qty <= 0, return 0
+function lineItemTotal(cartItem) {
+    let qty = findProductById(cartItem.id);
+    let discountedUnitPrice = priceAfterCategoryDiscount(cartItem.price);
+    return qty * discountedUnitPrice;   
+}
+
+console.log(lineItemTotal(products[201]));
+
+function lineItemTotal(cartItem) {
+    for
+}
