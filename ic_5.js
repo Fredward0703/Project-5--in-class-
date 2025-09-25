@@ -47,4 +47,15 @@ function priceAfterCategoryDiscount(product) {
     return product.price * (1 - rate);
 }
 
-console.log(priceAfterCategoryDiscount(products[0]).toFixed(2));
+//console.log(priceAfterCategoryDiscount(products[0]).toFixed(2));
+
+//task 3
+function findProductById(id) {
+    for (const p of products) {
+        if (p.id === id)
+        return p;
+    }
+    return null
+}
+
+// console.log(findProductById(203))
